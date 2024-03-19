@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/activities" element={<Activities />} />
         <Route path="/videos" element={<Videos />} />
-        <Route path="*" element={<NotFound />} /> {/* Handle 404 Not Found */}
+        <Route path="*" element={<NotFound />} /> 
       </Routes>
     </>
   );
