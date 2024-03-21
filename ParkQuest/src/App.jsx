@@ -15,6 +15,7 @@ import ParkCard from "../components/ParkCard";
 import Parks from "./pages/Parks";
 
 const Dashboard = () => <h1>National Parks</h1>;
+const ParkDetails = () => <h1>Park Details</h1>;
 const Activities = () => <h1>Activities</h1>;
 const Videos = () => <h1>Videos</h1>;
 const NotFound = () => <h1>404 Not Found</h1>;
@@ -48,7 +49,8 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/activities" element={<Activities />} />
         <Route path="/videos" element={<Videos />} />
-        <Route path="/parks" element={<Parks />} /> {/* Add this route */}
+        <Route path="/parks" element={<Parks />} />
+        <Route path="/parks/:parkCode" element={<ParkDetails />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
