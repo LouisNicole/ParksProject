@@ -22,6 +22,7 @@ const ParksDataProvider = ({ children }) => {
     };
     fetchParkData();
   }, []);
+
   console.log("Park Data:", parkData);
   console.log("Error:", error);
 
