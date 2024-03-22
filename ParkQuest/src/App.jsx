@@ -13,6 +13,7 @@ import API_KEY from "./utils/config";
 import handleFetch from "./utils/handleFetch";
 import ParkCard from "../components/ParkCard";
 import Parks from "./pages/Parks";
+import OnePark from "./pages/SoloPark";
 
 const Dashboard = () => <h1>National Parks</h1>;
 const ParkDetails = () => <h1>Park Details</h1>;
@@ -50,9 +51,11 @@ function App() {
         <Route path="/activities" element={<Activities />} />
         <Route path="/videos" element={<Videos />} />
         <Route path="/parks" element={<Parks />} />
-        <Route path="/parks/:parkCode" element={<ParkDetails />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/parks/:parkCode" element={<OnePark />} />
+        <Route path="*" element={<NotFound />}
+        />
       </Routes>
+      <ParkDetails />
     </>
   );
 }

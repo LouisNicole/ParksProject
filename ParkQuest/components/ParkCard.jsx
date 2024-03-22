@@ -8,7 +8,6 @@ const ParkCard = ({ park }) => {
 
   return (
     <div className="park-card">
-      <h2 className="park-name">{park.fullName}</h2>
       {console.log("Park Name:", park.fullName)}
 
       <Link to={`/parks/${park.parkCode}`}>
