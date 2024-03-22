@@ -8,15 +8,11 @@ const Parks = () => {
   console.log(parkData);
   return (
     <>
-      <h1>All Parks</h1>
-      <section>
-        <ul id="parks-list">
-          {parkData?.map((park) => (
-            <li key={park.parkCode}>
-              <ParkCard park={park} />
-            </li>
-          ))}
-        </ul>
+      <h1 className="text-center mb-8 text-2xl font-bold">All Parks</h1>
+      <section className="grid grid-cols-5 gap-4">
+        {parkData?.map((park) => (
+          <ParkCard key={park.parkCode} park={park} />
+        ))}
       </section>
     </>
   );
