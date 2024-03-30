@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 //
 const ParkCard = ({ park }) => {
-  console.log(park);
+  console.log(park); 3
   if (park.length === 0) {
     return <div>Loading...</div>;
   }

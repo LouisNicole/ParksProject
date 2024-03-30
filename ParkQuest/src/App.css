@@ -2,9 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Cantora+One&display=swap');
+
 
 * {
-  background-color: rgb(10, 104, 0);
+  background-color: #FFFFFF;
   /* margin: 0;
   padding: 0; */
 }
@@ -20,14 +22,9 @@ body {
 }
 
 nav {
-  background-color: gray;
-  /* display: flex;
-  gap: 2rem;
-  /* flex-direction: row; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
+  background-color: #FFFFFF;
+  border-bottom: 3px #FFCB47;
   height: 5rem;
-  /* font-size: 2rem;*/
   padding: 0 1 rem;
   display: flex;
   position: relative;
@@ -39,6 +36,7 @@ nav {
   padding: 0;
   margin: 20px;
   display: flex;
+  background-color: #FFFFFF;
   font-size: 25px;
   /* list-style: none;
   flex-direction: row; */
@@ -47,16 +45,20 @@ nav {
 .nav li {
   list-style: none;
   margin-right: 20px;
+  background-color: #FCF8D7;
 }
+
 .park-card {
-  width: calc(25% - 20px); /* Adjust the width as needed */
-  margin: 10px; /* Adjust margin between cards */
-  display: inline-block; /* Ensure each card is displayed in-line */
+  width: calc(25% - 20px);
+  margin: 10px;
+  display: inline-block;
 }
 
 .park-name {
   font-size: 18px;
   margin-bottom: 10px;
+  font-family: Cantora One;
+  letter-spacing: 1px;
 }
 
 .park-image {
@@ -74,9 +76,9 @@ nav {
   transform: scale(1.1);
 }
 
-/* Parent container for the ParkCards */
+/* Parent container for ParkCards */
 .park-cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Ensure even spacing between cards */
+  justify-content: space-between;
 }
