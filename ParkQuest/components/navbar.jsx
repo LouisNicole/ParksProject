@@ -6,15 +6,19 @@ export default function Navbar() {
         Site Name
       </Link>
       <ul>
+
+        <li>
+          <Link to="/home">Home</Link>
+        </li>
+
         <li>
           <Link to="/parks">Parks</Link>
         </li>
+
         <li>
           <Link to="/activities">Activities</Link>
         </li>
-        <li>
-          <Link to="/videos">Videos</Link>
-        </li>
+
       </ul>
     </nav>
   );

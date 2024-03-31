@@ -1,27 +1,27 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useNavigate } from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link,
-  NavLink,
+  NavLink
 } from "react-router-dom";
 import "./App.css";
 import "./singlePark.css";
+import "./landing.css";
 import Navbar from "../components/navbar";
 import API_KEY from "./utils/config";
 import handleFetch from "./utils/handleFetch";
 import ParkCard from "../components/ParkCard";
 import Parks from "./pages/Parks";
 import OnePark from "./pages/SoloPark";
-import Activities from "../components/Activities";
-import ParkActivities from "./pages/ParkActivity";
+import Landing from "./pages/Landing";
 
 const Dashboard = () => <h1>National Parks</h1>;
 const ParkDetails = () => <h1>Park Details</h1>;
-
-const Videos = () => <h1>Videos</h1>;
+const Activities = () => <h1>Activities</h1>;
+const Home = () => <h1>Home</h1>;
 const NotFound = () => <h1>404 Not Found</h1>;
 
 function App() {
@@ -45,14 +45,13 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/activities" element={<ParkActivities />} />
-        <Route path="/videos" element={<Videos />} />
+        <Route path="/activities" element={<Activities />} />
+        <Route path="/home" element={<Landing />} />
         <Route path="/parks" element={<Parks />} />
         <Route path="/parks/:parkCode" element={<OnePark />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      {/* if i remove this vv, it removed 'park details' from appearing at the bottom */}
-      {/* <ParkDetails /> */}
+
     </>
   );
 }

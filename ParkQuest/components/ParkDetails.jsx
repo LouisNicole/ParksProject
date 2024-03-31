@@ -65,7 +65,7 @@ const OnePark = ({ park }) => {
                 {found.operatingHours && found.operatingHours.length && (
                     <li className="times">
 
-                        <h3 className="times">Schedule:</h3>
+                        <h3 className="times">Schedule</h3>
                         <ul>
                             {Object.entries(found.operatingHours[0].standardHours)
                                 .sort((a, b) => {
