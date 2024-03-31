@@ -31,7 +31,6 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Assuming 'url' is defined somewhere in your code
         const response = await handleFetch(searchUrl);
         setData(response);
         console.log(data);

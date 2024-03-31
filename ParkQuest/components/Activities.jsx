@@ -19,7 +19,7 @@ const Activities = ({ setData }) => {
       const response = await handleFetch(searchUrl);
       if (response && response[0]?.data[0]?.parks.length > 0) {
         const parksData = response[0].data[0].parks;
-        setData(parksData); // Update the state with the parks data
+        setData(parksData);
       } else {
         console.log("No parks found with the activity");
       }
