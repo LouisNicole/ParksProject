@@ -5,7 +5,7 @@ import {
   Routes,
   Route,
   Link,
-  NavLink
+  NavLink,
 } from "react-router-dom";
 import "./App.css";
 import "./singlePark.css";
@@ -17,6 +17,7 @@ import ParkCard from "../components/ParkCard";
 import Parks from "./pages/Parks";
 import OnePark from "./pages/SoloPark";
 import Landing from "./pages/Landing";
+import ParkActivities from "./pages/ParkActivity";
 
 const Dashboard = () => <h1>National Parks</h1>;
 const ParkDetails = () => <h1>Park Details</h1>;
@@ -45,13 +46,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/activities" element={<Activities />} />
+        <Route path="/activities" element={<ParkActivities />} />
         <Route path="/home" element={<Landing />} />
         <Route path="/parks" element={<Parks />} />
         <Route path="/parks/:parkCode" element={<OnePark />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-
     </>
   );
 }
