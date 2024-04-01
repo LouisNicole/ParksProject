@@ -24,6 +24,7 @@ const ParkActivities = () => {
 
   return (
     <div>
+      <h1 className="search-activity">Search for an activity, view which parks to visit!</h1>
       <SearchForm onSubmit={handleSearch} />
       <p>
         <h1>Explore National Parks:</h1> Use the search bar to discover parks
