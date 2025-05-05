@@ -88,7 +88,7 @@ We used the National Parks Service API:
 ## 🙏 Credits
 **Developed by**:
 - [Louis Jager](https://github.com/LeaderLou1) - Routing & API Integration
-- [Nicole Juarez-Flores](https://github.com/nicolejf) - UI Design & State Management
+- [Nicole Juarez-Flores](https://github.com/nic0-j3) - UI Design & State Management
 
 ---
 
